@@ -5,6 +5,7 @@ CHIP DisplayCounter0132456{
     PARTS:
     Inc16(in=counterOut, out=counterNext, inc=inc, reset=reset);
     Register(in=counterNext, load=inc, out=counterOut, reset=reset);
-    Decoder(A=counterOut[3], B=counterOut[2], C=counterOut[1], D=counterOut[0], a=a, b=b, c=c, d=d, e=e, f=f, g=g);
+
+    Decoder201840925(A=counterOut[3],B=counterOut[2],C=counterOut[1],D=counterOut[0],a=a, b=b, c=c, d=d, e=e, f=f, g=g);
 
 }
