@@ -1,0 +1,10 @@
+CHIP Splitter {
+    IN in[16];
+    OUT out0,out1,out2,out3;
+
+    PARTS:
+    And(a=in[0],b=true,out=out0);
+    And(a=in[1],b=true,out=out1);
+    And(a=in[2],b=true,out=out2);
+    And(a=in[3],b=true,out=out3);
+}
